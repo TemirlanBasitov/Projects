@@ -16,13 +16,14 @@ class MainWindow(QMainWindow): # I define my MainWindow class with init function
         self.setWindowTitle("Sine & Cosine wave generator") 
 
         self.mainLabel = QLabel(self)
-        self.mainLabel.setText(' Please enter starting and end point in radians')
+        self.mainLabel.setText(' Please enter starting and end point in RADIANS')
         self.mainLabel.move(160, 5)
         self.mainLabel.resize(400,32)
         self.nameLabel = QLabel(self)     # Here I started to deisign and move my window
         self.nameLabel.setText('Starting point:')
         self.line = QLineEdit(self)
-        self.nameLabel2 = QLabel('End point')
+        self.nameLabel2 = QLabel(self)
+        self.nameLabel2.setText('End point')
         self.line2 = QLineEdit(self)
 
         self.line.move(100, 20)
